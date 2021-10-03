@@ -4,14 +4,15 @@
 	<meta charset="utf-8">
 	<title>Lab 3</title>
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	<script async defer src="script.js"></script>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 </head>
-<body onload="Graph()">
+<body>
 	<div id="backImage">
 		<div id="main">
 			<canvas id="canvas"></canvas>
-			<button type="button" class="btn btn-light">Step</button>
+			<script>CreateGraph()</script>
+			<button type="button" class="btn btn-light" onclick="Graph1();">Step</button>
 		</div>
 	</div>
 </body>

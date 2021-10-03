@@ -9,7 +9,7 @@
 	top: 0;
 }
 button.btn {
-	margin: 0 auto 0 auto;
+	float: left;
 	width: 100%;
 	font-size: 1.2rem;
 }
@@ -25,9 +25,40 @@ button.btn-light:hover {
 	border: 1px solid #538d8f;
 	border-radius: 10px;
 	background-color: cadetblue;
+	margin-left: 5%;
+	margin-bottom: 15px;
+	float: right;
 }
 #main {
-	width: 300px;
-	height: 300px;
+	display: flex;
+	width: 650px;
 	margin: 7vh auto 0 auto;
+	background-color: bisque;
+	border: 3px solid #b45e3d;
+	padding: 15px;
+}
+#info{
+	margin-right: 5%;
+}
+table{
+	text-align: center;
+	width: 100%;
+}
+.table {
+	border-color: transparent !important;
+}
+#canvasB, #info {
+	width: 55%;
+}
+input, label{
+	width: 10rem;
+}
+form{
+	width: 14rem;
+	margin: 0 auto 0 auto;
+}
+p{
+	font-size: 1.2rem;
+	text-align: center;
+	margin-bottom: 1rem;
 }

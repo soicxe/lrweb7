@@ -1,64 +1,59 @@
+body {
+	margin: 0;
+	font-family: 'Roboto Mono', monospace;
+}
+
 #backImage {
 	width: 100%;
 	height: 100%;
-	background-image: url("bg.jpg");
-	background-position: center center;
-	background-repeat: no-repeat no-repeat;
-	background-size: cover;
+	background: radial-gradient(ellipse farthest-side at 76% 77%, rgba(245, 228, 212, 0.25) 4%, rgba(255, 255, 255, 0) calc(4% + 1px)), radial-gradient(circle at 76% 40%, #fef6ec 4%, rgba(255, 255, 255, 0) 4.18%), linear-gradient(135deg, #ff0000 0%, #000036 100%), radial-gradient(ellipse at 28% 0%, #ffcfac 0%, rgba(98, 149, 144, 0.5) 100%), linear-gradient(180deg, #cd6e8a 0%, #f5eab0 69%, #d6c8a2 70%, #a2758d 100%);
+	background-blend-mode: normal, normal, screen, overlay, normal;
 	position: fixed;
-	top: 0;
 }
-button.btn {
-	float: left;
-	width: 100%;
-	font-size: 1.2rem;
+
+#circle {
+	margin: 12vh auto 0 auto;
+	width: 35vh;
+	height: 35vh;
+	outline: 3px solid #7270c7;
+	background: radial-gradient(circle, #cccdff 0%, #bebafd 40%, #acabf1 55%,#6867af 85%);
+	border-radius: 50%;
 }
-button.btn-light {
-	background-color: #73b2b4;
-	border-color: cadetblue;
-}
-button.btn-light:hover {
-	border-color: #538d8f;
-	background-color: cadetblue;
-}
-#canvas {
-	border: 1px solid #538d8f;
-	border-radius: 10px;
-	background-color: cadetblue;
-	margin-left: 5%;
-	margin-bottom: 15px;
-	float: right;
-}
-#main {
-	display: flex;
-	width: 650px;
-	margin: 7vh auto 0 auto;
-	background-color: bisque;
-	border: 3px solid #b45e3d;
-	padding: 15px;
-}
-#info{
-	margin-right: 5%;
-}
-table{
-	text-align: center;
-	width: 100%;
-}
-.table {
-	border-color: transparent !important;
-}
-#canvasB, #info {
+
+p {
+	box-shadow: 0px 0px 3px #8a85b4;
+	border: 5px ridge #b5b8e7;
 	width: 55%;
-}
-input, label{
-	width: 10rem;
-}
-form{
-	width: 14rem;
-	margin: 0 auto 0 auto;
-}
-p{
-	font-size: 1.2rem;
+	line-height: 7vh;
+	background: linear-gradient(to right,#a09ddb, #cdccff);
+	margin-left: 22%;
+	position: relative;
+	top: 14vh;
+	font-size: 5vh;
 	text-align: center;
-	margin-bottom: 1rem;
+	color: #fef5ec;
+	text-shadow: 2px 2px 0px #646abe, 0px 0px 4px #7164be;
+}
+
+#text {
+	width: 20rem;
+	margin: 16vh auto 0 auto;
+	background-color: #c4cdff;
+	border: 3px ridge #7076cf;
+	padding: 15px;
+	text-align: center;
+}
+
+input, label {
+	width: 97%;
+	font-size: 1rem;
+}
+
+input {
+	margin-top: 5px;
+}
+
+button {
+	margin-top: 10px;
+	font-family: 'Roboto Mono', monospace;
 }
